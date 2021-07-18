@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  {% block title %}<title>Local Library</title>{% endblock %}
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  td, th {
+  border: 1px solid black;
+  text-align: left;
+  padding: 8px;
+  }
+</style>
+</head>
+<body>
+  <nav class="navbar navbar-dark bg-dark">
+    <span class="navbar-text">
+      <h1>Local Library Home</h1>
+    </span>
+  </nav>
+  <div class="col-sm-10 ">
+  {% block content %}
+  {% endblock %}
+  <br>
+  {% block content3 %}
+  {% endblock %}
+  </div>
+</div>
+</div>
+</body>
+</html>
